@@ -13,7 +13,17 @@ sumToN(-8)  // returns null
 
 
 function sumToN(n) {
-  // Your code here 
+  // Your code here
+  if (n < 0) {
+    return null;
+  }
+  else if (n === 0) {
+    return n;
+  }
+  else {
+    return n + sumToN(n - 1);
+  }
+
 }
 
 
